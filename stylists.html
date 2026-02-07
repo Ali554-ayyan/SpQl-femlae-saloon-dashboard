@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stylists | SpQl Salon</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="../jst.js"></script>
+</head>
+
+<body>
+<header class="topbar">
+  <h1 class="logo">💄 SpQl Salon</h1>
+  <button class="back-btn" onclick="backPage('packages.html')">← Back</button>
+</header>
+
+<h2 class="title">👩 Our Expert Stylists</h2>
+
+<div class="grid fade" id="staffGrid">
+  <div class="staff" data-stylist="Sara" data-specialty="Expert">
+    <div class="dummy-img">
+      <img src="stylist.jpg" alt="Sara" class="responsive-img">
+    </div>
+    <h3>Sara</h3>
+    <div class="actions">
+      <button class="btn book-btn" onclick="selectStylist(this)">Book Now</button>
+    </div>
+  </div>
+
+  <div class="staff" data-stylist="Hina" data-specialty="Expert">
+    <div class="dummy-img">
+      <img src="stylist1.jpg" alt="Hina" class="responsive-img">
+    </div>
+    <h3>Hina</h3>
+    <div class="actions">
+      <button class="btn book-btn" onclick="selectStylist(this)">Book Now</button>
+    </div>
+  </div>
+
+  <div class="staff" data-stylist="Ayesha" data-specialty="Expert">
+    <div class="dummy-img">
+      <img src="stylist2.jpg" alt="Ayesha" class="responsive-img">
+    </div>
+    <h3>Ayesha</h3>
+    <div class="actions">
+      <button class="btn book-btn" onclick="selectStylist(this)">Book Now</button>
+    </div>
+  </div>
+
+  <div class="staff" data-stylist="Kainat" data-specialty="Expert">
+    <div class="dummy-img">
+      <img src="stylist3.jpg" alt="Kainat" class="responsive-img">
+    </div>
+    <h3>Kainat</h3>
+    <div class="actions">
+      <button class="btn book-btn" onclick="selectStylist(this)">Book Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="nav-pagination">
+  <button class="nav-btn prev-btn" onclick="backPage('packages.html')">← Back</button>
+  <button class="nav-btn next-btn" id="nextStylistBtn" onclick="nextPage('booking.html')" disabled>Next →</button>
+</div>
+</body>
+</html>

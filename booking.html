@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Booking | SpQl Salon</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="../jst.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <h1 class="logo">💄 SpQl Salon</h1>
+  <button class="back-btn" onclick="backPage('stylists.html')">← Back</button>
+</header>
+
+<div class="booking-wrap">
+  <h2>📅 Book Your Appointment</h2>
+  
+  <div class="booking-info">
+    <p><strong>Selected Package:</strong> <span id="selectedPackage">-</span></p>
+    <p><strong>Selected Stylist:</strong> <span id="selectedStylist">-</span></p>
+  </div>
+
+  <form id="bookingForm">
+    <label>Name *</label>
+    <input type="text" id="customerName" required>
+
+    <label>Date *</label>
+    <input type="date" id="bookingDate" required>
+
+    <label>Time *</label>
+    <input type="time" id="bookingTime" required>
+
+    <label>Service *</label>
+    <select id="serviceSelect" required>
+      <option value="">-- Select Service --</option>
+      <option value="Basic">Basic</option>
+      <option value="Standard">Standard</option>
+      <option value="Premium">Premium</option>
+    </select>
+
+    <button type="submit" class="primary" style="margin-top: 20px;">✅ Confirm Booking</button>
+  </form>
+
+  <button class="small-btn" onclick="backPage('stylists.html')">Back to Stylists</button>
+</div>
+</body>
+</html>

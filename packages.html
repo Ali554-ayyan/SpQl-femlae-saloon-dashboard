@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Packages | SpQl Salon</title>
+<link rel="stylesheet" href="css/style.css">
+<script defer src="jst.js"></script>
+</head>
+
+<body>
+<header class="topbar">
+  <h1 class="logo">💄 SpQl Salon</h1>
+  <button class="back-btn" onclick="backPage('index.html')">← Back</button>
+</header>
+
+<h2 class="title">💇 Choose Your Package</h2>
+
+<div class="grid">
+  <div class="package" onclick="selectPackage(this, 'Basic', 49)">
+    <div class="dummy-img"><img class="responsive-img" loading="lazy" src="packages-basic.png" alt="Basic Care"></div>
+    <h3>💅 Basic</h3>
+    <p>Blowout • Brows • Manicure</p>
+    <div class="price">$49</div>
+  </div>
+
+  <div class="package" onclick="selectPackage(this, 'Standard', 99)">
+    <div class="dummy-img"><img class="responsive-img" loading="lazy" src="packages-standard.png" alt="Standard Glow"></div>
+    <h3>✨ Standard</h3>
+    <p>Haircut • Facial • Spa</p>
+    <div class="price">$99</div>
+  </div>
+
+  <div class="package" onclick="selectPackage(this, 'Premium', 199)">
+    <div class="dummy-img"><img class="responsive-img" loading="lazy" src="packages-premium.png" alt="Premium Bridal"></div>
+    <h3>👑 Premium</h3>
+    <p>Bridal • Full Makeover • Day Spa</p>
+    <div class="price">$199</div>
+  </div>
+</div>
+
+<div class="nav">
+  <button onclick="backPage('index.html')">⬅ Back</button>
+  <button class="primary" id="nextPackageBtn" onclick="nextPage('stylists.html')" disabled>Next ➜</button>
+</div>
+</body>
+</html>

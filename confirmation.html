@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking Confirmation | SpQl</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="jst.js"></script>
+<script>
+window.addEventListener('load', function() {
+  setTimeout(loadConfirmation, 300);
+});
+</script>
+</head>
+
+<body class="center">
+<div class="card fade">
+  <div style="text-align:center; margin-bottom:20px;">
+    <h1 style="color:#2ecc71; font-size:48px;">✅</h1>
+    <h2>Booking Confirmed!</h2>
+  </div>
+
+  <div class="confirmation" id="bookingDetails">
+    <h3>Your Appointment Details</h3>
+    <p><strong>📝 Name:</strong> <span id="confirmName">-</span></p>
+    <p><strong>📅 Date:</strong> <span id="confirmDate">-</span></p>
+    <p><strong>⏰ Time:</strong> <span id="confirmTime">-</span></p>
+    <p><strong>💇 Service:</strong> <span id="confirmService">-</span></p>
+    <p><strong>💄 Package:</strong> <span id="confirmPackage">-</span></p>
+    <p><strong>👩 Stylist:</strong> <span id="confirmStylist">-</span></p>
+  </div>
+
+  <p style="text-align:center; color:#666; margin:20px 0;">
+    Your booking has been confirmed.<br>We look forward to seeing you!
+  </p>
+
+  <div class="nav">
+    <button class="primary" onclick="completeBooking()">🏠 Back to Home</button>
+  </div>
+</div>
+</body>
+</html>
